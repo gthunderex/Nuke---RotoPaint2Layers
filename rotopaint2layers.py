@@ -14,7 +14,7 @@ for shape in mainRoot:
   
 frameArray = []
 for shape in shapeArray:
-    attrs = shape.getAttribute()
+    attrs = shape.getAttributes()
     firstF = attrs.getValue(0,'ltn')
     lastF = attrs.getValue(0,'ltm')
     typeF = str(attrs.getValue(0,'ltt'))
@@ -34,9 +34,9 @@ for shape in shapeArray:
 for i in frameArray:
     layer = rp.Layer(n2_curves)
     layer.name = 'frame_' + str(i)
-    n2_curves.rootLayer.append(layers)
+    n2_curves.rootLayer.append(layer)
     for shape in shapeArray:
-        attrs = shape.getAttribute()
+        attrs = shape.getAttributes()
         firstF = attrs.getValue(0,'ltn')
         lastF = attrs.getValue(0,'ltm')
         typeF = str(attrs.getValue(0,'ltt'))
