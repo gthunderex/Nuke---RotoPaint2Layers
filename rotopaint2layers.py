@@ -11,7 +11,7 @@ n2_curves = n2['curves']
 shapeArray = []
 for shape in mainRoot:
     shapeArray.append(shape)
-  
+
 frameArray = []
 for shape in shapeArray:
     attrs = shape.getAttributes()
